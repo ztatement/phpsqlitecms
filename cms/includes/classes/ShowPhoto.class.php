@@ -140,4 +140,4 @@ class ShowPhoto
    return $this->show_comments;
   }
  }
-?>
+

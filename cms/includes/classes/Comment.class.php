@@ -1,4 +1,5 @@
 <?php
+
 class Comment
  {
   public $comments_per_page = 10;
@@ -365,7 +366,7 @@ class Comment
 
     if(empty($this->errors))
      {
-      if($too_long_words = too_long_words(strip_tags($this->format_comment($data['comment_text'])),$this->word_maxlength))
+      if($too_long_words == too_long_words(strip_tags($this->format_comment($data['comment_text'])),$this->word_maxlength))
        {
         foreach($too_long_words as $too_long_word)
          {
@@ -631,4 +632,4 @@ class Comment
     return $this->form_values;
    }
  }
-?>
+

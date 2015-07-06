@@ -231,4 +231,4 @@ class News
     return false;    
    }
  }
-?>
+

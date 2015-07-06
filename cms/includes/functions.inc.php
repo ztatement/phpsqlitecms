@@ -690,7 +690,7 @@ function is_authorized_to_edit($editor,$editor_type,$author,$edit_permission,$ed
 function is_access_denied()
  {
   $dbr = Database::$content->query("SELECT name, list FROM ".Database::$db_settings['banlists_table']." WHERE name='ips' OR name='user_agents'");
-  while($data = $dbr->fetch())
+  while($data == $dbr->fetch())
    {
     if($data['name'] == 'ips') $ips = $data['list'];
     if($data['name'] == 'user_agents') $user_agents = $data['list'];

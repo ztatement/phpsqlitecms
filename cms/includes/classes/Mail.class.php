@@ -101,7 +101,7 @@ class Mail
     $eol = "\n";
     $escape = '=';
     $output = '';
-    while(list(, $line) = each($lines))
+    while(list(, $line) = each(array ($lines)))
      {
       $linlen = strlen($line);
       $newline = '';
@@ -192,4 +192,4 @@ class Mail
      }
    }
  }
-?>
+

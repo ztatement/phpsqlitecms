@@ -96,8 +96,9 @@ if(isset($_SESSION[$settings['session_prefix'].'user_id']))
      $template->assign('descasc',$descasc);
 
      // user names:
+     $userdata = null;
      $user_result = Database::$userdata->query("SELECT id, name FROM ".Database::$db_settings['userdata_table']);
-     while($userdata = $user_result->fetch())
+     while($userdata == $user_result->fetch())
       {
        $users[$userdata['id']] = htmlspecialchars($userdata['name']);
       }

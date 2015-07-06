@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="<?php echo $lang['lang']; ?>" dir="<?php echo $lang['dir']; ?>">
-<head>
-    <meta charset="<?php echo $lang['charset']; ?>"/>
-    <title><?php echo $settings['website_title']; ?> - <?php echo $lang['administration'];
-        if (isset($subtitle)) echo ' - ' . $subtitle; ?></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <head>
+  <meta charset="<?php echo $lang['charset']; ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+   <?php echo $settings['website_title']; ?> - <?php echo $lang['administration'];
+        if (isset($subtitle)) echo ' - ' . $subtitle; ?>
+  </title>
 
     <link href="<?php echo BOOTSTRAP_CSS; ?>" rel="stylesheet">
     <link href="<?php echo STATIC_URL; ?>css/style_admin.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="<?php echo STATIC_URL; ?>img/favicon.png">
-</head>
 
-<body>
+ </head>
+ <body>
 
 <?php include(BASE_PATH . 'cms/templates/admin/subtemplates/admin_menu.inc.tpl'); ?>
 

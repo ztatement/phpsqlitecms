@@ -42,12 +42,12 @@ $lang['admin_menu_filemanager'] =        'Dateimanager';
 $lang['admin_menu_spam_protection'] =    'Spamschutz';
 $lang['admin_menu_user_administr'] =     'Benutzerverwaltung';
 $lang['admin_menu_clear_cache'] =        'Chache löschen';
-$lang['admin_menu_edit_userdata'] =      'Benitzerdaten bearbeiten';
+$lang['admin_menu_edit_userdata'] =      'Benutzerdaten bearbeiten';
 $lang['admin_menu_settings'] =           'Einstellunegn';
 
 # login
 $lang['login'] =                         'Login';
-$lang['login_failed'] =                  'Benutzer unbekannt oder passwort falsch!';
+$lang['login_failed'] =                  'Benutzer unbekannt oder Passwort falsch!';
 $lang['login_username'] =                'Name:';
 $lang['login_password'] =                'Passwort:';
 $lang['login_submit'] =                  'Login';
@@ -479,4 +479,3 @@ $lang['insert_image_alt'] =              'ALT-Text:';
 $lang['insert_image_width_height'] =     'Breite/Höhe:';
 $lang['delete_error'] =                  'Fehler beim Löschen';
 $lang['upload_error'] =                  'Fehler beim Hochladen - Schreibeberechtigungen prüfen!';
-?>

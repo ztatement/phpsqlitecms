@@ -108,8 +108,8 @@ $lang['previous_photo'] =                'Vorheriges Bild';
 $lang['next_photo'] =                    'Nächstes Bild';
 $lang['enlarge_photo'] =                 'Vergrößern';
 $lang['reduce_photo'] =                  'Verkleinern';
-$lang['show_large_photo'] =              'Large';
-$lang['show_large_photo_title'] =        'Show large photo';
+$lang['show_large_photo'] =              'Groß';
+$lang['show_large_photo_title'] =        'Großes Foto ansehen';
 $lang['back_link'] =                     'zurück';
 $lang['back_title'] =                    'zurück zu &quot;[page]&quot;';
 $lang['photo_comment_link_title'] =      'Die Kommentare zu diesem Foto lesen oder selbst welche schreiben';
@@ -146,4 +146,3 @@ $lang['search_no_results'] =             'Keine Seiten gefunden';
 $lang['akismet_error_api_key'] =         'Ungültiger Akismet-API-Key';
 $lang['akismet_error_connection'] =      'Fehler bei der Serververbindung - bitte versuchen Sie es später noch einmal';
 $lang['akismet_spam_suspicion'] =        'Spam-Verdacht!';
-?>

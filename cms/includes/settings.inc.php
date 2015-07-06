@@ -76,9 +76,10 @@ if(isset($_SESSION[$settings['session_prefix'].'user_type']) && $_SESSION[$setti
    {
     case 'main_settings':
      // get available pages:
+      $pages_data = null;
      $dbr = Database::$content->query("SELECT id, page FROM ".Database::$db_settings['pages_table']." ORDER BY page ASC");
      $i=0;
-     while($pages_data = $dbr->fetch())
+     while($pages_data == $dbr->fetch())
       {
        $pages[$i]['id'] = $pages_data['id'];
        $pages[$i]['page'] = $pages_data['page'];

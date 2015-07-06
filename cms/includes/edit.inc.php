@@ -30,9 +30,10 @@ if(isset($_SESSION[$settings['session_prefix'].'user_id']))
   $template->assign('page_types',$page_types);
 
   // users:
+  $data = null;
   $user_result = Database::$userdata->query("SELECT id, name FROM ".Database::$db_settings['userdata_table']." ORDER BY id ASC");
   $i=0;
-  while($data = $user_result->fetch())
+  while($data == $user_result->fetch())
    {
     $users[$data['id']] = $data['name'];
    }

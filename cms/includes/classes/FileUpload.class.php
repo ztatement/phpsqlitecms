@@ -50,7 +50,7 @@ class FileUpload
       $this->fileTooLarge = true;
      }
     
-    if($image=getimagesize($upload['tmp_name']))
+    if($image == getimagesize($upload['tmp_name']))
      {
       $this->isImage = true;
       $this->imageWidth = $image[0];
@@ -158,7 +158,7 @@ private function _resize_image($uploaded_file, $file, $new_width, $new_height, $
     $current_image = @imagecreatefrompng($uploaded_file) or $error = true;
     if(empty($error)) $new_image=@imagecreatetruecolor($new_width,$new_height) or $error = true;
     if(empty($error)) @imagecopyresampled($new_image,$current_image,0,0,0,0,$new_width,$new_height,$this->imageWidth,$this->imageHeight) or $error = true;
-    if(empty($error)) @imagepng($new_image, $file) or $error = $true;
+    if(empty($error)) @imagepng($new_image, $file) or $error = true;
    }
   }
   if(empty($error)) return true;
@@ -173,4 +173,4 @@ private function _resize_image($uploaded_file, $file, $new_width, $new_height, $
      }
    }
  }
-?>
+

@@ -17,4 +17,4 @@ if(isset($cache) && empty($no_cache))
  {
   $cache->cacheId = PAGE;
  }
-?>
+

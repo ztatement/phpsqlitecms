@@ -81,4 +81,4 @@ $page_types['sitemap'] = array(
 'page_type_label' => 'page_type_sitemap',
 'requires_parameter' => false
 );
-?>
+

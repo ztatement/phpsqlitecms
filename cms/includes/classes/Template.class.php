@@ -60,4 +60,4 @@ class Template
     return $data;
    }
  }
-?>
+

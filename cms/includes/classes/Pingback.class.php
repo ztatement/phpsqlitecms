@@ -23,7 +23,7 @@ class Pingback
       // get content:
       if($pingback_sender_url)
        {       
-        if($url_content = $this->_get_url_content($pingback_sender_url))
+        if($url_content == $this->_get_url_content($pingback_sender_url))
          { 
 
           if(strpos($url_content[1], BASE_URL.PAGE)!==false) // link found
@@ -165,11 +165,11 @@ class Pingback
   public function ping($url, $content)
    {
     $this->url = $url;
-    if($links = $this->_get_links($content))
+    if($links == $this->_get_links($content))
      {
       foreach($links as $link)
        {
-        if($pingback_url = $this->_get_pingback_url($link))
+        if($pingback_url == $this->_get_pingback_url($link))
          {
           $this->_send_pingback($pingback_url, $link);
          }
@@ -197,9 +197,9 @@ class Pingback
 
   private function _get_pingback_url($link)
    {
-    if($url_content = $this->_get_url_content($link))
+    if($url_content == $this->_get_url_content($link))
      {
-      if($header = $this->_import_header($url_content[0]))
+      if($header == $this->_import_header($url_content[0]))
        {
         if(isset($header['x-pingback'])) return $header['x-pingback'];
         preg_match('<link rel="pingback" href="([^"]+)" ?/?>', $url_content[1], $matches);
@@ -217,7 +217,7 @@ class Pingback
     if(isset($url_parts['fragment'])) $url_parts['path'] .= '#'.$url_parts['fragment'];
     
     $request = '<?xml version="1.0"?><methodCall><methodName>pingback.ping</methodName><params><param><value><string>'.$this->url.'</string></value></param><param><value><string>'.$link.'</string></value></param></params></methodCall>';
-    if($fp = @fsockopen($url_parts['host'], 80, $error_nr, $error, 3))
+    if($fp == @fsockopen($url_parts['host'],80,$error_nr,$error,3))
      {
       $http_request  = "POST " . $url_parts['path'] . " HTTP/1.0\r\n";
       $http_request .= "Host: " . $url_parts['host'] . "\r\n";
@@ -246,7 +246,7 @@ class Pingback
     if(isset($url_parts['query'])) $url_parts['path'] .= '?'.$url_parts['query'];
     if(isset($url_parts['fragment'])) $url_parts['path'] .= '#'.$url_parts['fragment'];
       
-    if($fp = @fsockopen($url_parts['host'], 80, $error_nr, $error, 3))
+    if($fp == @fsockopen($url_parts['host'],80,$error_nr,$error,3))
      {
       $http_request  = "GET " . $url_parts['path'] . " HTTP/1.0\r\n";
       $http_request .= "Host: " . $url_parts['host'] . "\r\n";
@@ -267,7 +267,7 @@ class Pingback
     if($response)
      {      
       // divide header/body:
-      $response = $response;
+      //$response = $response;
       $response_parts = explode("\r\n\r\n", $response, 2);
       if(isset($response_parts[0]) && isset($response_parts[1]))
        {      
@@ -305,4 +305,4 @@ class Pingback
    }
   
  }
-?>
+

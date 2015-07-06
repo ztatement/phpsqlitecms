@@ -53,4 +53,4 @@ class Gallery
     $this->number_of_photos = $i;
    }
  }
-?>
+

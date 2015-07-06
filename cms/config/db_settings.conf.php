@@ -63,4 +63,4 @@ $db_settings['banlists_table'] = 'phpsqlitecms_banlists';
 $db_settings['comment_table'] = 'phpsqlitecms_comments';
 $db_settings['userdata_table'] = 'phpsqlitecms_userdata';
 */
-?>
+

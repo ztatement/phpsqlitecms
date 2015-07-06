@@ -50,6 +50,7 @@ else
 if(empty($_POST) && file_exists('./'.CACHE_DIR.'settings.php'))
  {
   include('./'.CACHE_DIR.'settings.php');
+  $settings = get_settings();
   if(empty($_SESSION[$settings['session_prefix'].'user_id']))
    {
     if($qs=='') $cache_file = rawurlencode(strtolower($settings['index_page'])).'.cache';
@@ -181,4 +182,4 @@ catch(Exception $exception)
  {
   include('./cms/includes/exception.inc.php');
  }
-?>
+

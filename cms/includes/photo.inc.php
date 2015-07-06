@@ -9,7 +9,7 @@ $data = $dbr->fetch();
 if(empty($data['id']))
  {
   $no_cache = true;
-  if($data=get_content($settings['error_page']))
+  if($data == get_content($settings['error_page']))
    {
     header($_SERVER['SERVER_PROTOCOL'] . " 404 Not Found");
     header("Status: 404 Not Found");
@@ -91,7 +91,7 @@ else
   else
    {
     $no_cache = true;
-    if($data=get_content($settings['error_page']))
+    if($data == get_content($settings['error_page']))
      {
       header($_SERVER['SERVER_PROTOCOL'] . " 404 Not Found");
       header("Status: 404 Not Found");
@@ -103,4 +103,4 @@ else
      }
    }
  }
-?>
+

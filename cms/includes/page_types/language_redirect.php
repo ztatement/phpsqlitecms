@@ -99,12 +99,12 @@ header('Location: '.BASE_URL.$lang_pages_array[$lang]);
 
 ?><!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta http-equiv="refresh" content="0; <?php echo BASE_URL.$lang_pages_array[$lang]; ?>">
-<title>303 See Other</title>
-</head>
-<body>
-<a href="<?php echo BASE_URL.$lang_pages_array[$lang]; ?>"><?php echo BASE_URL.$lang_pages_array[$lang]; ?></a>
-</body>
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; <?php echo BASE_URL.$lang_pages_array[$lang]; ?>">
+  <title>303 See Other</title>
+ </head>
+ <body>
+  <a href="<?php echo BASE_URL.$lang_pages_array[$lang]; ?>"><?php echo BASE_URL.$lang_pages_array[$lang]; ?></a>
+ </body>
 </html>

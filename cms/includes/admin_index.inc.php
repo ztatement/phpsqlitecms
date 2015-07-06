@@ -7,4 +7,4 @@ if(isset($_GET['msg']))
  }
 
 $template->assign('subtemplate', 'admin_index.inc.tpl');
-?>
+

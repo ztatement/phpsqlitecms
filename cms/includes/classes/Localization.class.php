@@ -123,4 +123,4 @@ class Localization
     return strftime($format, $timestamp);
    }
  }
-?>
+

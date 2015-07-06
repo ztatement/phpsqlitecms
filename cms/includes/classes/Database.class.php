@@ -84,4 +84,4 @@ class Database
     return self::$_instance;
    }
  }
-?>
+

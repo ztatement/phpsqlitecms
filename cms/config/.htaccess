@@ -1,1 +1,4 @@
-deny from all
+<Files "*.*">
+  Order Deny,Allow
+  Deny from all
+</Files>
