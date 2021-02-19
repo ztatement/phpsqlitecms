@@ -18,15 +18,13 @@ Installation
      * **content.sqlite**, **entries.sqlite** and **userdata.sqlite** - SQLite database files, need to be writable by the webserver
      * **cms/cache** - cache directory, needs to be writable if you want to use the caching feature
      * **cms/media** and **cms/files** - need to be writable if you want to use the file uploader
-3. Ready! You should now be able to access the index page by browsing to the address you uploaded phpSQLiteCMS (e.g. http://example.org/path/to/phpsqlitecms/). To administrate the page, go to http://example.org/path/to/phpsqlitecms/cms/. The default admin userdata is: username: admin, password: admin.
+3. Ready! You should now be able to access the index page by browsing to the address you uploaded phpSQLiteCMS (e.g. https://demo-seite.com/path/to/phpsqlitecms/). To administrate the page, go to http://example.org/path/to/phpsqlitecms/cms/. The default admin userdata is: username: admin, password: admin.
 
 phpSQLiteCMS example sites
 --------------------------
 
-* <a href="http://phpsqlitecms.net/">phpSQLiteCMS</a> - project website
+* <a href="https://phpsqlitecms.hoschek.com/">phpSQLiteCMS</a> - project website (Original)
 * <a href="http://mylittleforum.net/">my little forum</a> - another project of the author of *phpSQLiteCMS*
 * <a href="http://procosara.org/">Pro Cosara</a> - an association dedicated to the conservation of Atlantic Forest in Paraguay
 * <a href="http://www.eschenhof-online.de/">Eschenhof</a> - biodynamic farm near Kassel, Germany / Biologisch-dynamische Landwirtschaft bei Kassel
 * <a href="http://praxis-kunstleben.de/">Praxis Kunstleben</a> - psychologische Praxis (Einzeltherapie, Paartherapie, Coaching, Familienberatung, Supervision) in Freiburg
-* <a href="http://www.elbi-bs.com/">ELBI</a> - manufacturing of individual furniture and more in Burgas, Bulgaria
-* <a href="http://phpsqlitecms.cu.cc/">phpSQLiteCMS Spanish</a> - Spanish phpSQLiteCMS demo and documentation site / página de documentación y demonstración española
