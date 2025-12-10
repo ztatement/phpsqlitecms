@@ -7,7 +7,7 @@ System requirements
 -------------------
 
 * Apache webserver with <a href="http://httpd.apache.org/docs/2.4/mod/mod_rewrite.html">mod_rewrite</a> and <a href="http://httpd.apache.org/docs/2.4/howto/htaccess.html">.htaccess file support</a> enabled
-* PHP 5 with <a href="http://php.net/manual/en/book.pdo.php">PDO</a> and <a href="http://php.net/manual/en/ref.pdo-sqlite.php">SQLite driver</a> enabled
+* PHP 8.5 with <a href="http://php.net/manual/en/book.pdo.php">PDO</a> and <a href="http://php.net/manual/en/ref.pdo-sqlite.php">SQLite driver</a> enabled
 
 Installation
 ------------
@@ -26,5 +26,3 @@ phpSQLiteCMS example sites
 * <a href="https://phpsqlitecms.hoschek.com/">phpSQLiteCMS</a> - project website (Original)
 * <a href="http://mylittleforum.net/">my little forum</a> - another project of the author of *phpSQLiteCMS*
 * <a href="http://procosara.org/">Pro Cosara</a> - an association dedicated to the conservation of Atlantic Forest in Paraguay
-* <a href="http://www.eschenhof-online.de/">Eschenhof</a> - biodynamic farm near Kassel, Germany / Biologisch-dynamische Landwirtschaft bei Kassel
-* <a href="http://praxis-kunstleben.de/">Praxis Kunstleben</a> - psychologische Praxis (Einzeltherapie, Paartherapie, Coaching, Familienberatung, Supervision) in Freiburg
